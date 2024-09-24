@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUsers, createUser, deleteUser, updateUser } from '../features/users/userSlice_1'; 
 
-const UserList = () => {
+const UserList1 = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -86,4 +86,4 @@ const UserList = () => {
     );
 };
 
-export default UserList;
+export default UserList1;
