@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement } from './features/counter/counterSlice'
 import CryptoList from './components/CryptoList';
+import UserList from './components/UserList';
 
 function App() {
   const count = useSelector((state) => state.counter.value);
@@ -12,6 +13,7 @@ function App() {
       <button onClick={() => dispatch(increment())}>Increment</button>
       <button onClick={() => dispatch(decrement())}>Decrement</button>
       <CryptoList />
+      <UserList />
     </div>
   )
 }
